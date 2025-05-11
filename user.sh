@@ -27,7 +27,7 @@ view_users() {
     fi
 
     user_list=$(awk -F '|' '{print "ID: " $1 "\nName: " $2 "\nEmail: " $3 "\n\n"}' users.txt)
-    whiptail --title "📋 All Users" --msgbox "$user_list" 20 60
+    whiptail --title "📋 All Users" --scrolltext --msgbox "$user_list" 20 60
 }
 
 # Function to delete a user
@@ -87,7 +87,7 @@ search_users() {
     fi
 
     formatted_results=$(echo "$results" | awk -F '|' '{print "ID: " $1 "\nName: " $2 "\nEmail: " $3 "\n\n"}')
-    whiptail --title "🔍 Search Results" --msgbox "$formatted_results" 20 60
+    whiptail --title "🔍 Search Results" --scrolltext --msgbox "$formatted_results" 20 60
 }
 
 # Function to sort users
@@ -114,7 +114,7 @@ sort_users() {
     esac
 
     formatted=$(echo "$sorted" | awk -F '|' '{print "ID: " $1 "\nName: " $2 "\nEmail: " $3 "\n\n"}')
-    whiptail --title "📊 Sorted Users" --msgbox "$formatted" 20 60
+    whiptail --title "📊 Sorted Users" --scrolltext --msgbox "$formatted" 20 60
 }
 
 # User Management Menu

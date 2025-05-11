@@ -1,1 +1,4 @@
 B6|The Wishlist|Preeti Shenoy|available
+B7|The Alchemist|Paulo Coelho|available
+B8|The ABC Murders|Agatha Christie|available
+B9|The Fault in Our Stars|John Green|available

@@ -42,7 +42,7 @@ view_books() {
     fi
 
     books_list=$(awk -F '|' '{print "ID: " $1 "\nTitle: " $2 "\nAuthor: " $3 "\nStatus: " $4 "\n\n"}' books.txt)
-    whiptail --title " All Books" --msgbox "$books_list" 20 60
+    whiptail --title " All Books" --scrolltext --msgbox "$books_list" 20 60
 }
 
 # Function to delete a book
@@ -132,7 +132,7 @@ search_books() {
     fi
 
     formatted_results=$(echo "$results" | awk -F '|' '{print "ID: " $1 "\nTitle: " $2 "\nAuthor: " $3 "\nStatus: " $4 "\n\n"}')
-    whiptail --title " Search Results" --msgbox "$formatted_results" 20 60
+    whiptail --title " Search Results" --scrolltext --msgbox "$formatted_results" 20 60
 }
 
 # Function to sort books
@@ -159,7 +159,7 @@ sort_books() {
     fi
 
     formatted_books=$(echo "$sorted_books" | awk -F '|' '{print "ID: " $1 "\nTitle: " $2 "\nAuthor: " $3 "\nStatus: " $4 "\n\n"}')
-    whiptail --title " Sorted Books" --msgbox "$formatted_books" 20 60
+    whiptail --title " Sorted Books" --scrolltext --msgbox "$formatted_books" 20 60
 }
 
 issue_book() {
@@ -245,7 +245,7 @@ return_book() {
 
 view_issued_books() {
     if [ ! -s issued_books.txt ]; then
-        whiptail --title "Issued Books" --msgbox "No books are currently issued." 10 60
+        whiptail --title "Issued Books" --scrolltext --msgbox "No books are currently issued." 10 60
         return
     fi
 

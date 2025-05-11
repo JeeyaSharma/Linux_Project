@@ -19,3 +19,8 @@
 2025-05-09 12:39:47 - Updated Book: [B6] The Wishlist by Preeti Shenoy
 2025-05-09 17:23:37 - Added User: [U3] ABCD
 2025-05-09 17:24:05 - Updated User: [U2] Jeeya Sharma
+2025-05-09 18:17:02 - Added Book: [B7] The Alchemist by Paulo Coelho
+2025-05-09 18:18:48 - Added User: [U4] EFGH
+2025-05-10 15:18:27 - Added Book: [B8] The ABC Murders by Agatha Christie
+2025-05-10 15:19:17 - Updated Book: [B6] The Wishlist by Preeti Shenoy
+2025-05-11 14:21:36 - Added Book: [B9] The Fault in Our Stars by John Green
